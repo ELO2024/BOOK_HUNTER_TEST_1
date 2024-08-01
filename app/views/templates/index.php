@@ -12,8 +12,8 @@
       <!-- Aside -->
       <?php include_once '../app/views/templates/partials/_aside.php'; ?>
 
-
       <!-- Main content -->
+       
       <?php include_once '../app/views/templates/partials/_main_content.php'; ?>
     <!-- Footer -->
     <?php include_once '../app/views/templates/partials/_footer.php'; ?>
