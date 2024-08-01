@@ -27,7 +27,7 @@
           <span>8.9</span>
         </div>
         <p class="text-gray-400">
-        <?php echo $book['resume']; ?>
+        <?php echo \Core\Helpers\trucate($book['resume']);?>
         </p>
         <a href="book.html" class="inline-block mt-4 bg-red-500 hover:bg-red-800 rounded-full px-4 py-2 text-white">
           More details
