@@ -12,11 +12,9 @@ if (isset($_GET['authors'])) :
 
 // ROUTE DES BOOKS
 //PATTERN: /?books
-//CTRL: booksController
-//ACTION: indexAction
+
 elseif (isset($_GET['books'])) :
-    include_once '../app/controllers/booksControllers.php';
-\App\Controllers\BooksController\indexAction($connexion);
+    include_once '../app/routers/books.php';
 
 
 // ROUTE PAR DEFAUT
