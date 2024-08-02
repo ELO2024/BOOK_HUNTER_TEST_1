@@ -7,7 +7,7 @@ function indexAction (PDO $connexion)
 {
 // Je vais demandé des données au modèles
 include_once '../app/models/authorsModel.php';
-$authors = \App\Models\AuthorsModel\findAll($connexion);
+$authors = \App\Models\AuthorsModel\findAll($connexion, 4);
 
 // Je charge la vue 'home' dans $content
 global $content, $title;

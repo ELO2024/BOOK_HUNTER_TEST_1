@@ -7,9 +7,9 @@ function homeAction (PDO $connexion)
 {
 // Je vais demandé des données au modèles
 include_once '../app/models/booksModel.php';
-$books = \App\Models\BooksModel\findAll($connexion);
+$books = \App\Models\BooksModel\findAll($connexion, 3);
 include_once '../app/models/authorsModel.php';
-$authors = \App\Models\AuthorsModel\findAll($connexion);
+$authors = \App\Models\AuthorsModel\findAll($connexion, 2);
 // Je charge la vue 'home' dans $content
 global $content, $title;
 $title ="HomePage";
