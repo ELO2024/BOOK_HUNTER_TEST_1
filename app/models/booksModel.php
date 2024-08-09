@@ -16,13 +16,13 @@ function findAll(PDO $connexion, int $limit = 6): array {
 }
 
 
-function findOnById(PDO $connexion, string $id): array {
+function findOnById(PDO $connexion, int $id): array {
     $sql = "SELECT *, p.id AS bookID, a.id AS authorID
     FROM books p
     INNER JOIN authors a ON p.author_id = a.id
    WHERE p.id =:id ;";
     $rs = $connexion->prepare($sql);
-    $rs->bindValue(':id', $id, PDO::PARAM_STR);
+    $rs->bindValue(':id', $id, PDO::PARAM_INT);
     $rs->execute();
     
     return $rs->fetch(PDO::FETCH_ASSOC);

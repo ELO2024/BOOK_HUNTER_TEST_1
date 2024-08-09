@@ -18,7 +18,7 @@
                   ><?php echo $book['firstname'];?><?php echo $book['lastname'];?></a
                 >
               </p>
-              <p class="text-gray-300 mb-4">Sortie le 01 janvier 1942</p>
+              <p class="text-gray-300 mb-4"><?php echo $book['publicated_at'];?></p>
               <p class="text-gray-300 mb-4">Genre: Roman</p>
               <div class="flex items-center mb-4">
                 <span class="text-yellow-500 mr-1">
@@ -51,6 +51,11 @@
             <p class="text-gray-300">
             <?php echo $book['resume'];?>
             </p>
+            
           </div>
         </div>
       </main>
+      
+      
+
+      

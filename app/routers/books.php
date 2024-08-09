@@ -1,7 +1,7 @@
 <?php
 
 use App\Controllers\BooksController;
-include '../app/controllers/booksController.php';
+include '../app/controllers/booksControllers.php';
 switch ($_GET['books']):
     case'show':
         //ACTION show
@@ -11,4 +11,5 @@ switch ($_GET['books']):
         // ACTION index
         BooksController\indexAction($connexion);
         break;
+        
 endswitch;

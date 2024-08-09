@@ -24,4 +24,5 @@ elseif (isset($_GET['books'])) :
 else:
 include_once '../app/controllers/pagesControllers.php';
 \App\Controllers\PagesController\homeAction($connexion);
+
 endif;

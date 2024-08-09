@@ -1,5 +1,5 @@
 <section class="mt-8">
-  <h2 class="text-2xl font-bold mb-4">Books</h2>
+
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 
   <?php foreach($books as $book): ?>
@@ -28,23 +28,15 @@
         <p class="text-gray-400">
         <?php echo \Core\Helpers\trucate($book['resume'], 50);?>
         </p>
-        <a href="?boos=show&id=<?php echo $book['bookID']?>" class="inline-block mt-4 bg-red-500 hover:bg-red-800 rounded-full px-4 py-2 text-white">
-          More details
-        </a>
+        <a href="?books=show&id=<?php echo $book['bookID']; ?>" class="inline-block mt-4 bg-red-500 hover:bg-red-800 rounded-full px-4 py-2 text-white">
+    More details
+</a>
+
       </div>
       
     </article>
-    
 <?php endforeach; ?>
+
   
-  </div>
-  <div class="text-center mt-8">
-          <button
-            class="bg-gray-700 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded-full"
-          >
-            Load More
-          </button>
-        </div>
-      </main>
-    </div>
-</section>
+  
+
